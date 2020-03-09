@@ -7,16 +7,26 @@ public class Jugador {
 		return y;
 	}
 
-	public void setY(int y) {
-		this.y = y;
+	public void setY(String posicion) {
+		if (posicion.equalsIgnoreCase("ARRIBA")) {
+			this.y++;
+		}
+		if (posicion.equalsIgnoreCase("ABAJO")) {
+			this.y--;
+		}
 	}
 
 	public int getX() {
 		return x;
 	}
 
-	public void setX(int x) {
-		this.x = x;
+	public void setX(String posicion) {
+		if (posicion.equalsIgnoreCase("DERECHA")) {
+			this.x++;
+		}
+		if (posicion.equalsIgnoreCase("IZQUIERDA")) {
+			this.x--;
+		}
 	}
 
 }
